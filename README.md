@@ -17,4 +17,4 @@
 ```
 
 ### Gambaran saat ini
-![alt text](https://github.com/RIZKYWAHYUS/kjt/gambaran/prog1.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/prog1.jpg)
