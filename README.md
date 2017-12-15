@@ -17,4 +17,4 @@
 ```
 
 ### Gambaran saat ini
-
+![alt text](https://raw.github.com/gambaran/prog1.jpg)
