@@ -18,12 +18,51 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('welcome_message');
+
+	function __construct(){
+		parent::__construct();
+		$this->load->model('m_artikel');
+		$this->load->model('m_data_perusahaan');
 	}
 
-	public function coba(){
-		$this->load->view('home');
+	public function index()
+	{
+		$this->db->where('nama', 'deskripsi_our_service');
+		$data['our_service'] = $this->m_artikel->ambil_artikel()->result();
+
+		$this->db->where('nama', 'our_service_persewaan');
+		$data['our_service_persewaan'] = $this->m_artikel->ambil_artikel()->result();
+
+		$this->db->where('nama', 'our_service_penjualan');
+		$data['our_service_penjualan'] = $this->m_artikel->ambil_artikel()->result();
+
+		$this->db->where('nama', 'deskripsi_our_product');
+		$data['our_product'] = $this->m_artikel->ambil_artikel()->result();
+
+
+		$this->db->where('nama', 'nama_perusahaan');
+		$data['nama_perusahaan'] = $this->m_data_perusahaan->ambil_data()->result();
+		
+		$this->db->where('nama', 'nama_perusahaan_sub');
+		$data['nama_perusahaan_sub'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'alamat');
+		$data['alamat'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_hp');
+		$data['no_hp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_telp');
+		$data['no_telp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'email');
+		$data['email'] = $this->m_data_perusahaan->ambil_data()->result();
+
+
+
+		$this->load->view('home', $data);
 	}
+
+
+
 }

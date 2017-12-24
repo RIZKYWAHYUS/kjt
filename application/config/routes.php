@@ -51,5 +51,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
-$route['coba']='welcome/coba';
+$route['translate_uri_dashes'] = TRUE;
+$route['nigol'] = 'login/index';
+$route['login/aksi_login'] = 'login/aksi_login';
+$route['admin'] = 'admin';
+$route['admin/ubah_artikel'] = 'admin/ubahArtikel';
+$route['admin/simpanPerubahanArtikel'] = 'admin/simpanPerubahanArtikel';
+$route['admin/ubah_data_perusahaan'] = 'admin/ubahDataPerusahaan';
+$route['admin/simpanPerubahanDataPerusahaan'] = 'admin/simpanPerubahanDataPerusahaan';
