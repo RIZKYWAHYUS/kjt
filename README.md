@@ -20,7 +20,6 @@
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/prog1.jpg)
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/prog2.jpg)
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/prog3.jpg)
-<<<<<<< HEAD
 
 
 
@@ -75,5 +74,3 @@
 
 
 
-=======
->>>>>>> e3554fbff890633680e89764b7a59b0fd5a1ca2b
