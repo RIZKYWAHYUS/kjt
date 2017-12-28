@@ -71,6 +71,67 @@
 
 
 
+## Laporan Progres 3 (24/12/2017)
+
+- Home {
+    - Font belom
+    - link di navbar
+}
+- About Us{
+    - gambar belom responsiv
+    - penyimpanan gambar belom ketata
+    - pop up belom
+}
+- Contact Us {
+    - Map belom responsive
+}
+- Admin {
+    - belom bisa ngedit slide show nya semua
+}
+
+### Rencana kedepan
+
+
+```
+1. Nata penyimpanan gambar
+2. Moles printilan2
+3. kelar
+
+```
+
+### Gambaran saat ini
+- home
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c1.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c2.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c3.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c4.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c5.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c6.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c7.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c8.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c9.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c91.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c92jpg)
+
+
+- Contact Us
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c93.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c94.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c95.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c96.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c97.jpg)
 
 
 
+
+- About Us
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c98.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c99.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c991.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c992.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c993.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c994.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c995.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c996.jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c997.jpg)
+ 

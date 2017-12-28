@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-fixed-top navbar-expand-lg navbar-light bg-light">
                 <div class="container">    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <a class="nav-link" href="#contact">CONTACTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
+                                <a class="nav-link" href="<?php echo site_url('welcome/aboutUs'); ?>">ABOUT US</a>
                             </li>
                         </ul>
                     </div>
@@ -59,9 +59,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-5 col-md-5 col-xs-5 formku">
                         <form action="/">
                             <h5 class="text-center">Subscribe & Contacts</h5>
-                            <input class="form-control kotakInput" type="text" name="name" id="name" placeholder="*Name">
-                            <input class="form-control kotakInput" type="text" name="company" id="company" placeholder="Company">
-                            <input class="form-control kotakInput" type="text" name="email" id="email" placeholder="*Email">
+                            <input class="form-control kotakInput input-unit" type="text" name="name" id="name" placeholder="*Name">
+                            <input class="form-control kotakInput input-unit" type="text" name="company" id="company" placeholder="Company">
+                            <input class="form-control kotakInput input-unit" type="text" name="email" id="email" placeholder="*Email">
                             <input class="tombolSubmit btn" type="button" value="SEND">       
                         </form>
 
@@ -127,163 +127,44 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="row karosel">
                     <div class="col-lg-12">
-                        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="http://i.imgur.com/EW5FgJM.png" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="http://i.imgur.com/EW5FgJM.png" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">                               
-                                    <div class="card" style="width: 20rem;">
-                                        <img class="card-img-top" src="http://i.imgur.com/EW5FgJM.png" alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div> -->
-
-
+                    
 
                         <div class="container-fluid">
                         <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
                             <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                                <div class="carousel-item col-md-2 active">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                             <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                           
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                          
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
-                                <div class="carousel-item col-md-2">
-                                    <div class="card">
-                                        <div class="card-img-top">
-                                            <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                                        </div>          
-                                        <div class="card-body">
-                                            <center><h4>asdasd</h4></center>                                            
-                                        </div>                              
-                                    </div>
-                                </div>
+                                <?php 
+                                    $i = 0;
+                                    foreach($gambar_product as $row){  
+                                        if($i == 0) {
+                                            echo "<div class='carousel-item col-md-2 active'>
+                                            <div class='card kar' data-toggle='modal' data-target='#a".$row->id."'>
+                                                <div class='card-img-top'>
+                                                    <img class='img-fluid mx-auto d-block'  src='data:image/jpeg;base64,".base64_encode($row->isi)."' alt='slide 1'>
+                                                </div>          
+                                                <div class='card-body'>
+                                                     <center>".$row->nama."</center>                                            
+                                                </div>                              
+                                            </div>
+                                        </div>" ;    
+                                        $i++;
+                                        } else {
+                                            echo "<div class='carousel-item col-md-2'>
+                                            <div class='card kar' data-toggle='modal' data-target='#a".$row->id."'>
+                                                <div class='card-img-top'>
+                                                    <img class='img-fluid mx-auto d-block' src='data:image/jpeg;base64,".base64_encode($row->isi)."' alt='slide 1'>
+                                                </div>          
+                                                <div class='card-body'>
+                                                     <center>".$row->nama."</center>                                            
+                                                </div>                              
+                                            </div>
+                                        </div>" ;
+    
+                                        }
 
-
-                            </div>
+                                }  ?>
                             
-
+                            </div> 
+                            <!-- .carousel-inner -->
 
                             <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -293,15 +174,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
-                        </div>
                     </div>
-
-
-
-
-
+                    <!-- #carouselExample -->
                     </div>
+                    <!-- .container-fluid -->
+
+
                 </div>
+                <!-- col-lg-12 -->
+            </div>
+            <!-- row karosel -->
+
+
+<!-- The Modal -->
+        <?php foreach($gambar_product as $row){
+                echo " 
+                <div class='modal fade' id='a".$row->id."'>
+                    <div class='modal-dialog modal-lg'>
+                    <div class='modal-content'>
+                    
+                        <!-- Modal body -->
+                        <div class='modal-body'>
+                                <div class='container kontainermodal'>
+                                    <div class='row rowmodal'>
+                                        <div class='col-lg-5'>
+                                            <center><img class='gambarmodal' src='data:image/jpeg;base64,".base64_encode($row->isi)."' alt=''></center>
+                                        </div>
+                                        <div class='col-lg-5'>
+                                            <p class='judulmodal'>".$row->nama."</p>
+                                            <p>Product Detail</p>
+                                            <ul>
+                                                <li>Main Frame A = 12 * 45</li>
+                                                <li>Main Frame A = 12 * 45</li>
+                                                <li>Main Frame A = 12 * 45</li>
+                                                <li>Main Frame A = 12 * 45</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <!-- Modal footer -->
+                        <div class='modal-footer'>
+                        <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>";
+            }?>
+           
 
 
 
@@ -315,7 +237,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
             </div>
+            <!-- container -->
         </div>
+        <!-- our-product -->
 
 
 

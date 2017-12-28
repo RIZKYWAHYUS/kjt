@@ -1,0 +1,99 @@
+  body {
+      background-color: rgb(255, 255, 255) !important;
+      margin: 0;
+      padding: 0;
+  }
+
+  .navbar {
+      -webkit-box-shadow: 0 8px 6px -6px #999;
+      -moz-box-shadow: 0 8px 6px -6px #999;
+      box-shadow: 0 8px 6px -6px #999;
+  }
+   
+
+    .logoAtas{
+      width:180px;
+    }
+  
+
+    .imgku{
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+
+    .content-left {
+        padding: 0;
+    }
+
+    .text-content-right{
+        margin-top: 50px;
+        padding-right: 70px !important;
+        padding-left: 28px !important;
+    }
+
+
+    .text-content-left{
+        margin-top: 70px;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+
+
+    .how-karya-jaya-teknik-serve{
+        min-height: 700px;
+        max-height: 2000px;
+        background: rgb(235, 235, 235);
+    }
+
+
+    .subjudul{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+
+    .img-icon{
+        width: 70px;
+        margin: 30px;
+    }
+
+    
+    .our-portofolio{
+        min-height: 700px;
+        max-height: 2000px;
+        background: rgb(255, 255, 255);
+    }
+
+    .img-porto{
+         margin: 20px;
+    }
+
+
+
+   
+    .footer{
+      min-height:300px !important;
+      max-height:900px;
+      background:rgb(211, 15, 25);
+      padding-bottom: 100px; 
+      padding-top: 90px;
+      color:white !important;
+    }
+  
+    .address{
+      margin-top: 20px;
+    }
+  
+    .alamat{
+      margin-bottom: 30px;
+    }
+  
+    .iconFooter{
+      width: 20px;
+    }
+  
+    .kontak{
+      margin-top: 20px;
+    }
+  

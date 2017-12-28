@@ -21,12 +21,15 @@ class Welcome extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_artikel');
 		$this->load->model('m_data_perusahaan');
+		
 	}
 
 	public function index()
 	{
+		$this->load->model('m_artikel');
+		$this->load->model('m_gambar_product');
+
 		$this->db->where('nama', 'deskripsi_our_service');
 		$data['our_service'] = $this->m_artikel->ambil_artikel()->result();
 
@@ -60,9 +63,59 @@ class Welcome extends CI_Controller {
 
 
 
+		$data['gambar_product'] = $this->m_gambar_product->ambil_data()->result();
+
+
 		$this->load->view('home', $data);
 	}
 
+
+	public function aboutUs(){
+		$this->db->where('nama', 'nama_perusahaan');
+		$data['nama_perusahaan'] = $this->m_data_perusahaan->ambil_data()->result();
+		
+		$this->db->where('nama', 'nama_perusahaan_sub');
+		$data['nama_perusahaan_sub'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'alamat');
+		$data['alamat'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_hp');
+		$data['no_hp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_telp');
+		$data['no_telp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'email');
+		$data['email'] = $this->m_data_perusahaan->ambil_data()->result();
+
+
+		$this->load->view('v_about_us', $data);
+	}
+
+
+	public function contactUs(){
+		$this->db->where('nama', 'nama_perusahaan');
+		$data['nama_perusahaan'] = $this->m_data_perusahaan->ambil_data()->result();
+		
+		$this->db->where('nama', 'nama_perusahaan_sub');
+		$data['nama_perusahaan_sub'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'alamat');
+		$data['alamat'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_hp');
+		$data['no_hp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'no_telp');
+		$data['no_telp'] = $this->m_data_perusahaan->ambil_data()->result();
+
+		$this->db->where('nama', 'email');
+		$data['email'] = $this->m_data_perusahaan->ambil_data()->result();
+
+
+		$this->load->view('v_contact_us', $data);
+	}
 
 
 }

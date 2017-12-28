@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(255, 255, 255) !important;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+  
+ 
+    .logoAtas{
+      width:180px;
+    }
+  
+
+
+    .iconContact {
+        width: 40px;
+        min-width: 20px;
+        max-width: 60px;
+    }
+
+    .textContact{
+        padding-left: 40px !important;
+    }
+
+
+    .peta{
+        width: 500px;
+        height: 350px;
+    }
+
+    .subscribe {
+      min-height: 400px;
+      max-height: 500px;
+      background: rgb(255, 255, 255);
+    }
+   
+
+    .inputan{
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      width: 100% !important;
+    }
+
+    .input-unit{
+      width: 100% !important;  
+      border : none !important;
+      border-bottom: 2px solid rgb(211, 15, 25) !important;
+      border-radius : 0px !important;
+    }
+
+    .input-unit:active {
+      width: 100% !important;  
+      border : none !important;
+      border-bottom: 2px solid rgb(211, 15, 25) !important;
+      border-radius : 0 !important;
+    }
+
+    .input-unit:focus {
+      width: 100% !important;  
+      border : none !important;
+      border-bottom: 2px solid rgb(211, 15, 25) !important;
+      border-radius : 0 !important;
+    }
+
+    .tombolSend{
+      margin-top: 40px;
+      background-color:rgba(0,0,0,0) !important;
+      width: 300px !important;
+      border : 1px solid rgba(211, 15, 25, 0.5) !important;
+      border-radius: 35px !important;
+      color : rgb(211, 15, 25) !important;
+      position: absolute;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+   
+   
+   
+    .tombolSend:hover{
+     margin-top: 40px;
+     background-color:rgb(211, 15, 25) !important;
+     width: 300px !important;
+     border : 1px solid white !important;
+     border-radius: 35px !important;
+     color : white !important;
+     position: absolute;
+     left:50%;
+     transform: translate(-50%,-50%);
+   }
+
+ 
+    .subjudul{
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+
+    .img-icon{
+        width: 70px;
+        margin: 30px;
+    }
+
+    
+    .contact{
+        min-height: 700px;
+        max-height: 2000px;
+        background: rgb(235, 235, 235);
+    }
+
+    
+
+    .isiHeader{
+      position: relative;
+    }
+  
+    
+    .footer{
+      min-height:300px !important;
+      max-height:900px;
+      background:rgb(211, 15, 25);
+      padding-bottom: 100px; 
+      padding-top: 90px;
+      color:white !important;
+    }
+  
+    .address{
+      margin-top: 20px;
+    }
+  
+    .alamat{
+      margin-bottom: 30px;
+    }
+  
+    .iconFooter{
+      width: 20px;
+    }
+  
+    .kontak{
+      margin-top: 20px;
+    }
+  
+  
+  
+   
