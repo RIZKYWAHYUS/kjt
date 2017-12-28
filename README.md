@@ -73,21 +73,21 @@
 
 ## Laporan Progres 3 (24/12/2017)
 
-- Home {
+- Home 
     - Font belom
     - link di navbar
-}
-- About Us{
+
+- About Us
     - gambar belom responsiv
     - penyimpanan gambar belom ketata
     - pop up belom
-}
-- Contact Us {
+
+- Contact Us 
     - Map belom responsive
-}
-- Admin {
+
+- Admin 
     - belom bisa ngedit slide show nya semua
-}
+
 
 ### Rencana kedepan
 
@@ -111,7 +111,7 @@
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c8.jpg)
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c9.jpg)
 ![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c91.jpg)
-![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c92jpg)
+![alt text](https://github.com/RIZKYWAHYUS/kjt/blob/master/gambaran/c92.jpg)
 
 
 - Contact Us
