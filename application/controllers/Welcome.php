@@ -71,6 +71,8 @@ class Welcome extends CI_Controller {
 
 
 	public function aboutUs(){
+		$this->load->model('m_portofolio');		
+
 		$this->db->where('nama', 'nama_perusahaan');
 		$data['nama_perusahaan'] = $this->m_data_perusahaan->ambil_data()->result();
 		
@@ -88,6 +90,9 @@ class Welcome extends CI_Controller {
 
 		$this->db->where('nama', 'email');
 		$data['email'] = $this->m_data_perusahaan->ambil_data()->result();
+
+
+		$data['portofolio'] = $this->m_portofolio->ambil_data()->result();
 
 
 		$this->load->view('v_about_us', $data);

@@ -171,22 +171,69 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <center><h4>Our Portofolio</h4></center>
                     </div>
                 </div>
-                <div class="row">
+
+                <!-- kotak gambar portofolio -->
+                 <?php  
+                    $i=0;
+                    foreach($portofolio as $row){
+                           $gambarku = base_url('../assets/images/portofolio/'.$row->gambar);
+                           if($i == 0){
+                                echo "<div class='row'>
+                                        <div class='col-lg-1'></div>
+                                        <div class='col-lg-2 col-md-5 col-xs-12' >
+                                            <center>
+                                                <img data-toggle='modal' data-target='#modal".$row->id."' class='img-porto img-fluid' src='".$gambarku."'/>
+                                            </center>
+                                        </div>";
+                                $i++;
+                           }else if ($i%5 == 0) {
+                               echo "    <div class='col-lg-1'></div>
+                                    </div>
+                                    <div class='row'>
+                                        <div class='col-lg-1'></div>
+                                        <div class='col-lg-2 col-md-5 col-xs-12'>
+                                            <center>
+                                                <img data-toggle='modal' data-target='#modal".$row->id."' class='img-porto img-fluid' src='".$gambarku."'/>                                            
+                                            </center>
+                                        </div>";
+                                $i++;
+                           }else if ($i%9 == 0){
+                               echo "<div class='col-lg-2 col-md-5 col-xs-12'>
+                                        <center>
+                                            <img data-toggle='modal' data-target='#modal".$row->id."' class='img-porto img-fluid' src='".$gambarku."'/>                                            
+                                        </center>
+                                    </div>
+                                    <div class='col-lg-1'></div>";
+                                $i++;
+                           }else{
+                               echo "<div class='col-lg-2 col-md-5 col-xs-12' >
+                                        <center>
+                                            <img data-toggle='modal' data-target='#modal".$row->id."' class='img-porto img-fluid' src='".$gambarku."'/>                                            
+                                        </center>
+                                    </div>";
+                                $i++;
+                           }
+                    }  
+                    echo "</div>";
+                ?>
+
+<!-- hasil akhir foreach diatas -->
+                <!-- <div class="row">
                     <div class="col-lg-1"></div>
-                    <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto1.png');?>" alt=""></center>
+                    <div class="col-lg-2" >
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto2.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto3.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto4.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto5.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-1"></div>
                 </div>
@@ -194,28 +241,65 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="row">
                     <div class="col-lg-1"></div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto7.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto8.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto6.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto6.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-2">
-                        <center><img class="img-porto img-fluid" src="<?php echo base_url('../assets/images/porto6.png');?>" alt=""></center>
+                        <center><img data-toggle='modal' data-target='#data1' class="img-porto img-fluid" src="" alt=""></center>
                     </div>
                     <div class="col-lg-1"></div>
-                </div>
+                </div> -->
 
             </div>
         </div>
 
       
       
+        <?php 
+            foreach($portofolio as $row){
+                $gambarku = base_url('../assets/images/portofolio/'.$row->gambar);
+                echo "<div class='modal fade' id='modal".$row->id."'>
+                            <div class='modal-dialog modal-lg'>
+                            <div class='modal-content'>
+                            
+                                <!-- Modal body -->
+                                <div class='modal-body'>
+                                        <div class='container kontainermodal'>
+                                            <div class='row rowmodal'>
+                                                <div class='col-lg-5'>
+                                                    <center><img class='gambarmodal img-fluid' src='".$gambarku."' alt=''></center>
+                                                </div>
+                                                <div class='col-lg-7'>
+                                                    <p class='judulmodal'>".$row->nama."</p>
+                                                    <p class='subjudulmodal'>Location :</p>
+                                                    <p>".$row->lokasi."</p>
+                                                    <p class='subjudulmodal'>Owner :</p>
+                                                    <p>".$row->owner."</p>
+                                                    <p class='subjudulmodal'>Project Details :</p>
+                                                    <p>".$row->details."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class='modal-footer'>
+                                <button type='button' class='btn btn-secondary' data-dismiss='modal'>Close</button>
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>" ;
+            }
+        ?>
       
 
 

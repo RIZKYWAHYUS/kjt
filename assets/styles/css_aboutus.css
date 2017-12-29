@@ -67,7 +67,9 @@
 
     .img-porto{
          margin: 20px;
+         cursor: pointer;
     }
+ 
 
 
 
@@ -97,3 +99,21 @@
       margin-top: 20px;
     }
   
+
+    .kontainermodal{
+        padding-top: 40px !important;
+        padding-left: 40px !important;
+    }
+
+    .gambarmodal{
+        max-width: 
+    }
+
+    .judulmodal{
+        font-size: 28px;
+    }
+
+    .subjudulmodal{
+        margin-top: -10px ;
+        margin-bottom: -1px;
+    }

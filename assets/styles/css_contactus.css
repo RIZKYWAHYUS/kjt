@@ -67,6 +67,23 @@ body {
       border-radius : 0 !important;
     }
 
+    .form-control:focus {
+      border-color: none !important;
+      box-shadow: none !important;
+      border : none !important;
+      border-bottom: 2px solid rgb(211, 15, 25) !important;
+      border-radius : 0px !important;
+    }
+
+    .form-control:active{
+      border-color: none !important;
+      box-shadow: none !important;
+      border : none !important;
+      border-bottom: 2px solid rgb(255, 255, 255) !important;
+      border-radius : 0px !important;
+    }
+
+
     .tombolSend{
       margin-top: 40px;
       background-color:rgba(0,0,0,0) !important;

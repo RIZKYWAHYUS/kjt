@@ -14,6 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </head>
     <body>
 
+    <div id="top"></div>
     <nav class="navbar sticky-top navbar-fixed-top navbar-expand-lg navbar-light bg-light">
                 <div class="container">    
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +23,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav nav" id="navbar">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link aa" href="#top">HOME <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#our-service">SERVICE</a>
+                                <a class="nav-link aa" href="#our-service">SERVICE</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#our-product">PRODUCTS</a>
+                                <a class="nav-link aa" href="#our-product">PRODUCTS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">CONTACTS</a>
+                                <a class="nav-link" href="<?php echo site_url('../contact') ?>">CONTACTS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?php echo site_url('welcome/aboutUs'); ?>">ABOUT US</a>
@@ -43,8 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </a>
                 </div>
             </nav>
+        
 
-        <header class="tf-header">
+        <header class="tf-header" >
             <div class="container isiHeader">
                 <div class="row jumbku">
                     <div class="col-lg-5 col-md-5 col-xs-12 vertical-center">
